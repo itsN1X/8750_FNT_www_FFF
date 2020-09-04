@@ -145,7 +145,7 @@ falcones00.onload = function(){FALCONes00=JSON.parse(this.response);
                                 FalconCGEXa.setAttribute("target","_blank");
                                 FalconCGEX.appendChild(FalconCGEXa);
                                 const FalconCGVO = document.createElement("td");
-                                FalconCGVO.textContent=FALCONCG.tickers[i].volume.toLocaleString() + " FNT";
+                                FalconCGVO.textContent=FALCONCG.tickers[i].volume.toFixed(0).toLocaleString() + " FNT";
                                 FalconCGROW.appendChild(FalconCGPR);
                                 FalconCGROW.appendChild(FalconCGEX);
                                 FalconCGROW.appendChild(FalconCGVO);
